@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/devo/index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project2</title>
 </head>
 <body>
-  <a href="/devo/new">new devo</a>
-  <h1>My peronal devotional and diary</h1>
-  <ul>
-    <li><a href="/devo">devotional</a></li>
-    <li><a href="/diary">diary</a></li>
-    <li><a href="/">main</a></li>
-  </ul>
+  <body>
+    <header>
+    <nav class="nav">
+      <ul id="horizontal-list"  style="list-style: none;">
+        <li><a href="/">Main</a></li>
+        <li><a href="/devo">Devotional</a></li>
+        <li><a href="/diary">Diary</a></li>
+        <li><a href="/devo/new">New Devo</a></li>
+      </ul>
+    </nav>
+    <h1>My Daily Devotional</h1>
+  </header>
+
   <% for (i = 0; i < devo.length; i++) { %> 
-  <div>
-    <a href="/devo/<%=devo[i]._id%> "><li><%= devo[i].Date  %> </li></a>
+
+  <div class="table">
+    <table class="styled-table">
+      <tr>
+        <td><a href="/devo/<%=devo[i]._id%> "><%= devo[i].Date  %></a></td>
+        <td><a href="/devo/<%=devo[i]._id%>"><%= devo[i].BibleVerse  %></a></td>
+        <td><a href="/devo/<%=devo[i]._id%> "><%= devo[i].Name  %></a></td>
+      </tr>
+    </table>
   </div>
   <% } %> 
 </body>

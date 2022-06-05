@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/diary/index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project2</title>
 </head>
 <body>
-  <a href="/diary/new">new diary</a>
-  <h1>My peronal devotional and diary</h1>
-  <ul>
-    <li><a href="/devo">devotional</a></li>
-    <li><a href="/diary">diary</a></li>
-    <li><a href="/">main</a></li>
-  </ul>
-
+  <header>
+    <nav class="nav">
+      <ul id="horizontal-list"  style="list-style: none;">
+        <li><a href="/">Main</a></li>
+        <li><a href="/devo">Devotional</a></li>
+        <li><a href="/diary">Diary</a></li>
+        <li><a href="/diary/new">New Diary</a></li>
+      </ul>
+    </nav>
+    <h1>My Diary</h1>
+  </header>
   <% for (i = 0; i < diary.length; i++) { %> 
-    <div>
-      <a href="/diary/<%= diary[i]._id %> "><li><%= diary[i].Date  %> </li></a>
+
+    <div class="table">
+      <table class="styled-table">
+        <tr>
+          <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Date  %></a></td>
+          <td><a href="/diary/<%=diary[i]._id%>"><%= diary[i].BibleVerse  %></a></td>
+          <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Name  %></a></td>
+        </tr>
+      </table>
     </div>
     <% } %> 
 </body>

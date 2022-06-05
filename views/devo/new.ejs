@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/devo/new.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devotional</title>
 </head>
 <body>
-  <h1>My peronal devotional and diary</h1>
-  <ul>  
-    <li><a href="/devo">devotional</a></li>
-    <li><a href="/diary">diary</a></li>
-    <li><a href="/">main</a></li>
-  </ul>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul id="horizontal-list"  style="list-style: none;">
+          <li><a href="/">Main</a></li>
+          <li><a href="/devo">Devotional</a></li>
+          <li><a href="/diary">Diary</a></li>
+          <li><a href="/devo/new">New Devo</a></li>
+        </ul>
+      </nav>
+      <h1>My Daily Devotional</h1>
+    </header>
+  </body>
 
-  <form action="/devo" method="POST">
-    Name: <input type="text" name="Name""/><br/>
-    Date: <input type="text" name="Date"/><br/>
-    BibleVerse: <input type="text" name="BibleVerse"/><br/>
-    Note: <input type="text" name="Note"/><br/>
-    Application: <input type="text" name="Application"/><br/>
-    <input type="submit" value="Create New">
+  <form class="form" action="/devo" method="POST">
+    Name: <input class="input-1" type="text" name="Name""/><br/>
+    Date: <input class="input-1" type="text" name="Date"/><br/>
+    BibleVerse: <input class="input-1" type="text" name="BibleVerse"/><br/>
+    Note: <input class="input-1" type="text" name="Note"/><br/>
+    Application: <input class="input-1"type="text" name="Application"/><br/>
+    <input class="button-1" type="submit" value="Create New">
   </form>
 
-  <a href="/"><button>return to main</button></a>
+  <a href="/"><button class="button-1">return to main</button></a>
 </body>
 </html>

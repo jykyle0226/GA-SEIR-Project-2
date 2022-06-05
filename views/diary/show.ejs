@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/diary/show.css">
   <link rel="stylesheet" href="/CSS/show.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +12,32 @@
   <title>SHOW</title>
 </head>
 <body>
-  <h1>My peronal devotional and diary</h1>
+  <header>
+    <nav class="nav">
+      <ul id="horizontal-list"  style="list-style: none;">
+        <li><a href="/">Main</a></li>
+        <li><a href="/devo">Devotional</a></li>
+        <li><a href="/diary">Diary</a></li>
+        <li><a href="/diary/new">New Diary</a></li>
+      </ul>
+    </nav>
+    <h1>My Diary</h1>
+  </header>
 
-  <ul>
-    <li><a href="/devo">devotional</a></li>
-    <li><a href="/diary">diary</a></li>
-    <li><a href="/">main</a></li>
-  </ul>
+<section>
+  <div class="data">
+    <h2>Date</h2>
+    <h3><%= diary.Date %> </h3>
+    <h2>Name</h2>
+    <h3><%= diary.Name %> </h3>
+    <h2>Note</h2>
+    <h3><%= diary.Note %> </h3>
+    <a class="button-1" href="/diary/<%= diary._id %>/edit">Edit Diary</a>
+    <form action="/diary/<%= diary._id %>?_method=DELETE" method="POST">
+      <input class="button-1" type="submit" value="Delete Devo" />
+    </form>
+</div>
+</section>
 
-  <div>
-      <h3><%= diary.Date %> </h3>
-      <h3><%= diary.Name %> </h3>
-      <h3><%= diary.Note %> </h3>
-      <a href="/diary/<%= diary._id %>/edit">Edit Diary</a>
-      <form action="/diary/<%= diary._id %>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete Devo" />
-      </form>
-  </ul>
-  </div>
 </body>
 </html>
