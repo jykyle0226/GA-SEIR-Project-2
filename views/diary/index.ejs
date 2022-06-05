@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project2</title>
+</head>
+<body>
+  <a href="/diary/new">new diary</a>
+  <h1>My peronal devotional and diary</h1>
+  <ul>
+    <li><a href="/devo">devotional</a></li>
+    <li><a href="/diary">diary</a></li>
+    <li><a href="/">main</a></li>
+  </ul>
+
+  <% for (i = 0; i < diary.length; i++) { %> 
+    <div>
+      <a href="/diary/<%= diary[i]._id %> "><li><%= diary[i].Date  %> </li></a>
+    </div>
+    <% } %> 
+</body>
+</html>

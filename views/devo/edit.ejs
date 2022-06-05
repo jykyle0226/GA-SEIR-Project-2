@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project2</title>
+</head>
+<body>
+  <a href="/devo/new">new devo</a>
+  <h1>My peronal devotional and diary</h1>
+  <ul>
+    <li><a href="/devo">devotional</a></li>
+    <li><a href="/diary">diary</a></li>
+    <li><a href="/">main</a></li>
+  </ul>
+
+  <main>
+    <h2>Devo Edit</h2>
+    <form action="/devo/<%= devo._id %>?_method=PUT" method="POST">
+      Name: <input type="text" name="Name" value="<%= devo.Name %>" /><br />
+      Date: <input type="text" name="Date" value="<%=devo.Date %>" /><br />
+      BibleVerse: <input type="text" name="BibleVerse" value="<%= devo.BibleVerse %>" /><br />
+      Note: <input type="text" name="Note" value="<%= devo.Note %>" /><br />
+      Application: <input type="text" name="Application" value="<%= devo.Application %>" /><br />
+      <input type="submit" value="Update Devo" />
+    </form>
+  </main>
+</body>
+</html>
