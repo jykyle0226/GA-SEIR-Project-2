@@ -13,7 +13,7 @@ JavaScript | CSS | HTML | Node.js | Express | Mongo DB | Heroku
 
 ## Getting Started
 
-[click here]("https://project2-minyong-kim.herokuapp.com/") to see the deployed page!
+[click here](https://project2-minyong-kim.herokuapp.com/) to see the deployed page!
 
 ## Future Enhancements:
  * LogIn feature
