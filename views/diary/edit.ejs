@@ -26,6 +26,7 @@
   <main>
     <h2>Devo Edit</h2>
     <form action="/diary/<%= diary._id %>?_method=PUT" method="POST">
+      Title: <input class="input-1" type="text" name="Title" value="<%= diary.Title %>" /><br />
       Name: <input class="input-1" type="text" name="Name" value="<%= diary.Name %>" /><br />
       Date: <input class="input-1" type="text" name="Date" value="<%=diary.Date %>" /><br />
       Note: <input class="input-1" type="text" name="Note" value="<%= diary.Note %>" /><br />

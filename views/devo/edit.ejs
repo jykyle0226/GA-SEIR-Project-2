@@ -28,6 +28,7 @@
   <main>
     <h2>Devo Edit</h2>
     <form action="/devo/<%= devo._id %>?_method=PUT" method="POST">
+      Title: <input class="input-1" type="text" name="Title" value="<%= devo.Title %>" /><br />
       Name: <input class="input-1" type="text" name="Name" value="<%= devo.Name %>" /><br />
       Date: <input class="input-1" type="text" name="Date" value="<%=devo.Date %>" /><br />
       BibleVerse: <input class="input-1" type="text" name="BibleVerse" value="<%= devo.BibleVerse %>" /><br />

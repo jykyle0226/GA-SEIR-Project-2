@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-const devoController = require('./controller/devo');
-app.use('/devo', devoController);
 require('dotenv').config();
 const router = express.Router();
 const PORT = process.env.PORT
@@ -10,14 +8,14 @@ const mongoose = require('mongoose')
 const db = mongoose.connection
 const dotenv = require('dotenv')
 require('dotenv').config()
-const diaryController = require('./controller/diary')
 const methodOverride = require('method-override');
 const Diary = require('./models/diary')
 const Devo = require('./models/devotional');
 const devoSeed = require('./models/devoSeed')
 const diarySeed = require('./models/diarySeed')
 app.use("/CSS",express.static(__dirname + "/CSS"));
-
+const diaryController = require('./controller/diary')
+const devoController = require('./controller/devo');
 // middleware
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }))

@@ -32,8 +32,10 @@ h1{
   margin: 50px;
 }
 
-
-
+.nav-2{
+  display: flex;
+  justify-content: center;
+}
 
 .table{
   font-family: 'Roboto Mono', monospace;

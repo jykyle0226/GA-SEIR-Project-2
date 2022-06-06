@@ -24,20 +24,23 @@
     <h1>My Diary</h1>
   </header>
 
-<section>
-  <div class="data">
+  <div>
+    <h2>Title</h2>
+    <h3><%= diary.Title %> </h3>
     <h2>Date</h2>
     <h3><%= diary.Date %> </h3>
     <h2>Name</h2>
-    <h3><%= diary.Name %> </h3>
+    <h3><%= diary.name %> </h3>
     <h2>Note</h2>
     <h3><%= diary.Note %> </h3>
-    <a class="button-1" href="/diary/<%= diary._id %>/edit">Edit Diary</a>
+  </div>
+  
+  <div class="container">
+    <a id="edit" class="button-1" href="/diary/<%= diary._id %>/edit">Edit Diary</a>
     <form action="/diary/<%= diary._id %>?_method=DELETE" method="POST">
-      <input class="button-1" type="submit" value="Delete Devo" />
-    </form>
-</div>
-</section>
+    <input class="button-1" type="submit" value="Delete Diary" />
+</form>
+  </div>
 
 </body>
 </html>

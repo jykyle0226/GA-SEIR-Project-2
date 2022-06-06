@@ -25,13 +25,16 @@
   <% for (i = 0; i < diary.length; i++) { %> 
 
     <div class="table">
-      <table class="styled-table">
-        <tr>
-          <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Date  %></a></td>
-          <td><a href="/diary/<%=diary[i]._id%>"><%= diary[i].BibleVerse  %></a></td>
-          <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Name  %></a></td>
-        </tr>
-      </table>
+      <nav class="nav-2">
+        <table class="styled-table">
+          <tr>
+            <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Date  %></a></td>
+            <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Title  %></a></td>
+            <td><a href="/diary/<%=diary[i]._id%>"><%= diary[i].BibleVerse  %></a></td>
+            <td><a href="/diary/<%=diary[i]._id%> "><%= diary[i].Name  %></a></td>
+          </tr>
+        </table>
+      </nav>
     </div>
     <% } %> 
 </body>

@@ -1,5 +1,6 @@
 module.exports = [
   {
+  Title: '6/1 Morning devo',
   Name:'Min Kim',
   Date:'6/1/2022',
   BibleVerse: 'John 3:16',
@@ -7,6 +8,7 @@ module.exports = [
   Application: 'Jesus loves us'
       },
   {
+    Title: '6/2 Morning devo',
     Name:'Min Kim',
     Date:'6/2/2022',
     BibleVerse: 'Romans 14:8',
@@ -14,6 +16,7 @@ module.exports = [
     Application: `I live for Jesus`
   },
   {
+    Title: '6/3 Morning devo',
     Name:'Min Kim',
     Date:'6/3/2022',
     BibleVerse: 'Act 1:8',
