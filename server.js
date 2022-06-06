@@ -13,7 +13,6 @@ const Diary = require('./models/diary')
 const Devo = require('./models/devotional');
 const devoSeed = require('./models/devoSeed')
 const diarySeed = require('./models/diarySeed')
-app.use("/CSS",express.static(__dirname + "/CSS"));
 const diaryController = require('./controller/diary')
 const devoController = require('./controller/devo');
 // middleware

@@ -8,6 +8,107 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .input-1{
+  text-align: center;
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+  padding: 7px 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+  font-family:'Roboto Mono', monospace;
+}
+.button-1 {
+  background-color: #141112;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 40px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+
+.nav {
+  overflow: hidden;
+  background-color: #e4ede0;
+
+}
+.nav li {
+  font-family: 'Roboto Mono', monospace;
+  display: inline;
+  float: left;
+  font-size: 20px;
+}
+.nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  background-color: rgb(142, 170, 176);
+}
+
+body{
+  background-color: #cde6ec;
+}
+
+h1{
+  text-align: center;
+  font-family:'Roboto Mono', monospace;
+  margin: 50px;
+}
+main{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family:'Roboto Mono', monospace;
+}
+
+form{
+  text-align: center;
+  font-family:'Roboto Mono', monospace;
+}
+
+#button{
+  text-align: center;
+}
+
+.form{
+  font-family:'Roboto Mono', monospace;
+  text-align: center;
+}
+  </style>
   <title>Devotional</title>
 </head>
 <header>
@@ -19,7 +120,7 @@
       <li><a href="/devo/new">New Devo</a></li>
     </ul>
   </nav>
-  <h1>My Daily Diary</h1>
+  <h1>New Diary</h1>
 </header>
 
   <form action="/diary" method="POST">
@@ -28,7 +129,7 @@
     Date: <input class="input-1" type="text" name="Date"/><br/>
     note: <input class="input-1" type="text" name="Note"/><br/>
     <input class="button-1" type="submit" value="Create New">
-    <a href="/"><button id="button-1" class="button-1" >return to main</button></a>
+    <a href="/"><button id="button-1" class="button-1" >Return to Main</button></a>
   </form>
 </body>
 </html>
