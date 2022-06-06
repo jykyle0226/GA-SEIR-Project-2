@@ -13,7 +13,7 @@ JavaScript | CSS | HTML | Node.js | Express | Mongo DB | Heroku
 
 ## Getting Started
 
-[click here]([https://main--astonishing-dieffenbachia-49841b.netlify.app/](https://project2-minyong-kim.herokuapp.com/diary)) to see the deployed page!
+[click here]("https://project2-minyong-kim.herokuapp.com/") to see the deployed page!
 
 ## Future Enhancements:
  * LogIn feature
