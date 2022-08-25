@@ -1,160 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/devo/show.css">
-  <link rel="stylesheet" href="/CSS/show.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .nav {
-      overflow: hidden;
-      background-color: #e4ede0;
-    
-    }
-    .nav li {
-      font-family: 'Roboto Mono', monospace;
-      display: inline;
-      float: left;
-      font-size: 20px;
-    }
-    .nav li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 15px 15px;
-      text-decoration: none;
-    }
-    .nav li a:hover {
-      background-color: rgb(142, 170, 176);
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/devo/show.css" />
+    <link rel="stylesheet" href="/CSS/show.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .nav {
+        overflow: hidden;
+        background-color: #e4ede0;
+      }
+      .nav li {
+        font-family: "Roboto Mono", monospace;
+        display: inline;
+        float: left;
+        font-size: 20px;
+      }
+      .nav li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+      }
+      .nav li a:hover {
+        background-color: rgb(142, 170, 176);
+      }
+
+      body {
+        background-color: #cde6ec;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        margin: 50px;
+      }
+
+      .right {
+        float: right;
+      }
+
+      .table {
+        font-family: "Roboto Mono", monospace;
+      }
+      .button-1 {
+        background-color: #141112;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        line-height: 20px;
+        list-style: none;
+        margin: 0;
+        outline: none;
+        padding: 10px 16px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;
+        vertical-align: baseline;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-1:hover,
+      .button-1:focus {
+        background-color: #f082ac;
+      }
+
+      h3 {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+      }
+      h2 {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+      }
+
+      form {
+        text-align: center;
+        display: inline-block;
+        text-decoration: none !important;
+        margin: 0 auto;
+      }
+
+      #edit {
+        text-align: center;
+        display: inline-block;
+        text-decoration: none !important;
+      }
+
+      .container {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #edit {
+        margin: 0 auto;
+      }
+      .devo-show-div {
+        display: flex;
+      }
+
+      .devo-show-1 {
+        margin: 20px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .devo-show-1 h1{
+        text-decoration: underline;
+      }
       
-    }
-    
-    body{
-      background-color: #cde6ec;
-    }
-    
-    h1{
-      text-align: center;
-      font-family:'Roboto Mono', monospace;
-      margin: 50px;
-    }
-    
-    .right{
-      float: right;
-    }
-    
-    
-    .table{
-      font-family: 'Roboto Mono', monospace;
-    }
-    .button-1 {
-      background-color: #141112;
-      border-radius: 8px;
-      border-style: none;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      cursor: pointer;
-      display: inline-block;
-      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      height: 40px;
-      line-height: 20px;
-      list-style: none;
-      margin: 0;
-      outline: none;
-      padding: 10px 16px;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      transition: color 100ms;
-      vertical-align: baseline;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-    }
-    
-    .button-1:hover,
-    .button-1:focus {
-      background-color: #F082AC;
-    }
-    
-    h3{
-      font-family:'Roboto Mono', monospace;
-      text-align: center;
-    }
-    h2{
-      font-family:'Roboto Mono', monospace;
-      text-align: center;
-    }
-    
-    
-    form {
-      text-align: center;
-      display:inline-block;
-      text-decoration: none !important;
-      margin:0 auto;
-    }
-    
-    #edit{
-      text-align: center;
-      display:inline-block;
-      text-decoration: none !important;
-    }
-    
-    .container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    #edit{
-      margin: 0 auto;
-      width: 110px;
-    }
-  </style>
-  <title>Show Devo</title>
-</head>
-<body>
+      .devo-show-2 {
+        margin: 20px;
+        margin-left: 5px;
+        width: 600px;
+      }
+      .devo-show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <title>Show Devo</title>
+  </head>
   <body>
-    <header>
-    <nav class="nav">
-      <ul id="horizontal-list"  style="list-style: none;">
-        <li><a href="/">Main</a></li>
-        <li><a href="/devo">Devotional</a></li>
-        <li><a href="/diary">Diary</a></li>
-      </ul>
-    </nav>
-    <h1>My Daily Devotional</h1>
-  </header>
-  </body>
-
-  <div>
-      <h2>Title</h2>
-      <h3><%= devo.Title %> </h3>
-      <h2>Date</h2>
-      <h3><%= devo.Date %> </h3>
-      <h2>Name</h2>
-      <h3><%= devo.name %> </h3>
-      <h2>Bible Verse</h2>
-      <h3><%= devo.BibleVerse %> </h3>
-      <h2>Note</h2>
-      <h3><%= devo.Note %> </h3>
-      <h2>Application</h2>
-      <h3><%= devo.Application %> </h3>
+    <body>
+      <header>
+        <nav class="nav">
+          <ul id="horizontal-list" style="list-style: none">
+            <li><a href="/">Main</a></li>
+            <li><a href="/devo">Devotional</a></li>
+            <li><a href="/diary">Diary</a></li>
+          </ul>
+        </nav>
+        <h1>My Daily Devotional</h1>
+      </header>
+    </body>
+    <div class="devo-show">
+      <div class="devo-show-div">
+        <div class="devo-show-1">
+          <h2>Title</h2>
+          <h3><%= devo.Title %></h3>
+          <h2>Date</h2>
+          <h3><%= devo.Date %></h3>
+          <h2>Name</h2>
+          <h3><%= devo.name %></h3>
+        </div>
+        <div class="devo-show-2">
+          <h2>Bible Verse</h2>
+          <h3><%= devo.BibleVerse %></h3>
+          <h2>Note</h2>
+          <h3><%= devo.Note %></h3>
+          <h2>Application</h2>
+          <h3><%= devo.Application %></h3>
+        </div>
+      </div>
     </div>
-    
+
     <div class="container">
-      <a id="edit" class="button-1" href="/devo/<%= devo._id %>/edit">Edit Devo</a>
+      <a id="edit" class="button-1" href="/devo/<%= devo._id %>/edit"
+        >Edit Devo</a
+      >
       <form action="/devo/<%= devo._id %>?_method=DELETE" method="POST">
-      <input class="button-1" type="submit" value="Delete Devo" />
-  </form>
+        <input
+          id="delete-btn"
+          class="button-1"
+          type="submit"
+          value="Delete Devo"
+        />
+      </form>
     </div>
-
-
-</body>
+  </body>
 </html>
